@@ -7,6 +7,17 @@ package tree;
  * @version v1.0
  */
 public class BinaryNode<T> {
+
+    public BinaryNode(T theElement) {
+        this(theElement, null, null);
+    }
+
+    public BinaryNode(T theElement, BinaryNode<T> lt, BinaryNode<T> rt) {
+        this.element = theElement;
+        this.left = lt;
+        this.right = rt;
+    }
+
     private T element;
     private BinaryNode<T> left;
     private BinaryNode<T> right;
